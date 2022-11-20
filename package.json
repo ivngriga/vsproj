@@ -2,6 +2,10 @@
   "name": "vsproj",
   "version": "1.0.0",
   "description": "Solana PvP Coin Flip",
+  "scripts": {
+    "start": "node index.js"
+  },
+  
   "dependencies": {
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
