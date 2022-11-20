@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Asd Lair </title>
+</head>
+
+<body>
+    <h1> topchenga! </h1><br>
+
+    <button id="settingsButton"> Settings </button> <br><br>
+
+    <fieldset>
+
+        <legend>Select an amount:</legend>
+
+        <div>
+        <input type="radio" id="0.2" name="amount" value="0.2" checked>
+        <label for="0.2">0.2</label>
+        </div>
+
+        <div>
+            <input type="radio" id="0.5" name="amount" value="0.5">
+            <label for="0.5">0.5</label>
+        </div>
+
+        <div>
+            <input type="radio" id="1.0" name="amount" value="1.0">
+            <label for="1.0">1.0</label>
+        </div>
+
+    </fieldset> <br>
+
+    <input type="text" id="walletInput" placeholder="Enter Wallet">
+
+    <button id="connectButton"> Start Search </button>
+    <button id="showRematch"> Offer Rematch </button>
+
+    <div id="chat">
+        <br><br> <b>Chat:</b><br><br>
+        <div id="messageDisplay">
+
+        </div><br>
+        <textarea id="chatInput"></textarea> <br>
+        <button id="messageButton"> Send Message</button>
+    </div>
+
+    <div id="rematch">
+        <br><br> <b>Offer Rematch:</b>  <br><br>
+
+        Amount: <input id="rematchAmount" type="number"><br><br>
+        <button id="rematchButton"> Offer Rematch </button> 
+    </div>
+
+    <div id="settings">
+        <br><br> Wallet Connected: <b id="walletDisplay"> </b><br>
+        <button id="disconnectWalletButton"> Disconnect Wallet </button>
+
+    </div>
+
+    
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.2/dist/peerjs.min.js"></script>
+    <script src="js/clientHandler.js">
+    </script>
+</body>
+
+</html>
